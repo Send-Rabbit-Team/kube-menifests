@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: rns-react
-  name: rns-reat
+  name: rns-react
 spec:
   replicas: 3
   selector:
