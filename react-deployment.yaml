@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: rns-react
+  name: rns-reat
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: rns-react
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: rns-react
+    spec:
+      containers:
+      - name: rns-react
+        image: forcetlight/rns-react:1
+        ports:
+          - containerPort: 3000
