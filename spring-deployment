@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: rns-spring
+  name: rns-spring
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: rns-spring
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: rns-spring
+    spec:
+      containers:
+      - name: rns-spring
+        image: forcetlight/rns-spring:1
+        ports:
+          - containerPort: 8080
