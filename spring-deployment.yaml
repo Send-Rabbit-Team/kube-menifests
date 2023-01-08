@@ -18,6 +18,6 @@ spec:
     spec:
       containers:
       - name: rns-spring
-        image: forcetlight/rns-spring:16
+        image: forcetlight/rns-spring:18
         ports:
           - containerPort: 8080
