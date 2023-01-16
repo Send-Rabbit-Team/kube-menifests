@@ -18,6 +18,6 @@ spec:
     spec:
       containers:
       - name: rns-react
-        image: forcetlight/rns-react:70
+        image: forcetlight/rns-react:71
         ports:
           - containerPort: 3000
